@@ -14,60 +14,65 @@
     <title>Студия</title>
   </head>
   <body>
-    <!--Header-->
+    <!---------------------Header--------------------->
     <header>
-      <a class="logo" href="index.html"
+      <div class="container">
+        <a class="logo" href="index.html"
         ><span class="logo-web">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="navigation">
+        >
+        <nav>
+          <ul class="navigation">
+            <li class="list">
+              <a class="link active-page" href="index.html">Студия</a>
+            </li>
+            <li class="list">
+              <a class="link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="list"><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
           <li class="list">
-            <a class="link active-page" href="index.html">Студия</a>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
           </li>
           <li class="list">
-            <a class="link" href="portfolio.html">Портфолио</a>
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11 </a>
           </li>
-          <li class="list"><a class="link" href="">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li class="list">
-          <a class="link" href="mailto:info@devstudio.com"
-            >info@devstudio.com
-          </a>
-        </li>
-        <li class="list">
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11 </a>
-        </li>
-      </ul>
+      </div>
     </header>
+
     <main>
-      <!--Hero-->
-      <section class="hero">
-        <h1 class="hero-title">
+      <!---------------------Hero--------------------->
+      <section class="hero center">
+        <div class="container center">
+          <h1 class="hero-title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
         <button class="button-studio" type="button">Заказать услугу</button>
       </section>
-      <!--studio advantages-->
+      <!---------------------studio advantages--------------------->
       <section>
-        <ul>
-          <li class="list">
+        <div class="container">
+          <ul class="studio-advantages-list">
+            <li class="list">
             <h3 class="studio-advantages-title">Внимание к деталям</h3>
             <p class="studio-advantages-desctiption">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
-          </li>
-          <li class="list">
+            </li>
+            <li class="list">
             <h3 class="studio-advantages-title">Пунктуальность</h3>
             <p class="studio-advantages-desctiption">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="list">
+          <li class="list studio-advantages">
             <h3 class="studio-advantages-title">Планирование</h3>
             <p class="studio-advantages-desctiption">
               Равным образом консультация с широким активом в значительной
@@ -82,11 +87,14 @@
             </p>
           </li>
         </ul>
+        </div>
+              
       </section>
-      <!--What we do-->
+      <!---------------------What we do--------------------->
       <section>
-        <h2 class="wwd-title">Чем мы занимаемся</h2>
-        <ul>
+        <div class="container center">
+          <h2 class="wwd-title">Чем мы занимаемся</h2>
+        <ul class="wwd-list">
           <li class="link">
             <img
               src="./images/website-for-pc.jpg"
@@ -109,12 +117,14 @@
             />
           </li>
         </ul>
+        </div>
+        
       </section>
 
-      <!--our team-->
+      <!---------------------our team--------------------->
       <section>
-        <h2 class="our-team-title">Наша команда</h2>
-        <ul>
+        <div class="container"><h2 class="our-team-title">Наша команда</h2>
+        <ul class="out-team-list">
           <li class="list">
             <img
               src="./images/photo-ihor-demyanenko.jpg"
@@ -151,35 +161,36 @@
             <h3 class="team-names">Михаил Ермаков</h3>
             <p class="team-positions">UI Designer</p>
           </li>
-        </ul>
+        </ul></div>
+        
       </section>
     </main>
 
-    <!--footer-->
+    <!---------------------footer--------------------->
     <footer class="footer-bgc">
-      <a class="logo" href="index.html"
+      <div class="container"><a class="logo" href="index.html"
         ><span class="logo-web">Web</span
         ><span class="footer-studio">Studio</span>
       </a>
       <address>
-        <ul>
-          <li class="list">
+        <ul class="adress-list">
+          <li class="footer-list list">
             <a class="link footer-map" href=""
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li class="list">
+          <li class="footer-list list">
             <a class="link footer-contacts" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li class="list">
+          <li class="footer-list-last list">
             <a class="link footer-contacts" href="tel:+380991111111"
               >+38 099 111 11 11</a
             >
           </li>
         </ul>
-      </address>
+      </address></div>
     </footer>
   </body>
 </html>

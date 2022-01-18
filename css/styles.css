@@ -1,4 +1,4 @@
-/* variable */
+/* ---------------------variable--------------------- */
 :root {
   --main-text-color: #212121;
   --additional-text-color: #757575;
@@ -10,38 +10,70 @@
   --bgc-button-main: #2196f3;
   --bgc-button-portfolio: #f5f4fa;
 }
-/* general rules */
+/* ---------------------general rules--------------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+
+.container {
+  margin: 0px auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+.center {
+  text-align: center;
+}
+
 .logo,
 .list,
 .link {
   text-decoration: none;
   list-style-type: none;
   color: var(--main-text-color);
+  margin: 0;
 }
 .active-page {
   color: var(--brand-color);
 }
-/* header styles */
+
+/* ---------------------header styles--------------------- */
 .logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   color: var(--main-text-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .logo-web {
   color: var(--brand-color);
+  display: inline-block;
+  padding-top: 60px;
 }
 .navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.header-contacts {
+  margin: 0px;
 }
 
 .header-contacts a {
@@ -63,18 +95,27 @@ body {
   color: var(--focus-color);
 }
 
-/* main styles */
-/*hero*/
+/* ---------------------main styles--------------------- */
+/* ---------------------hero--------------------- */
 .hero {
   background-color: var(--bgc-total);
+  margin: 0px auto;
+  max-width: 1600px;
 }
 .hero-title {
+  margin: 0px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--bgc-additional);
 }
 .button-studio {
+  display: inline-block;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -82,6 +123,10 @@ body {
   background-color: var(--bgc-button-main);
   color: var(--bgc-additional);
   cursor: pointer;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+  min-width: 200px;
+  border-radius: 4px;
 }
 .button-portfolio {
   font-family: inherit;
@@ -98,8 +143,15 @@ body {
   background-color: var(--bgc-button-main);
 }
 
-/* advantages styles */
+/* ---------------------advantages styles--------------------- */
+.studio-advantages-list {
+  margin: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .studio-advantages-title {
+  margin: 0px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -107,24 +159,36 @@ body {
   text-transform: uppercase;
 }
 .studio-advantages-desctiption {
+  margin: 0px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--additional-text-color);
 }
+
+/* ---------------------What We Do (WWD) + our team--------------------- */
+.wwd-list,
+.out-team-list {
+  margin: 0px;
+}
+
 .wwd-title,
 .our-team-title {
+  margin: 0px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   color: var(--main-text-color);
+  padding: 50px;
 }
 .team-names {
+  margin: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
 }
 .team-positions {
+  margin: 0px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--additional-text-color);
@@ -140,14 +204,27 @@ body {
   line-height: 1.88;
   color: var(--additional-text-color);
 }
-/* footer styles */
+/* ---------------------footer styles--------------------- */
 .footer-bgc {
   background-color: var(--bgc-total);
+  margin: 0px auto;
+  max-width: 1600px;
 }
 .footer-studio {
   color: var(--bgc-additional);
 }
+.footer-list {
+  padding-bottom: 10px;
+}
+.footer-list-last {
+  padding-bottom: 60px;
+}
+.adress-list {
+  margin: 0px;
+  padding: 0px;
+}
 .footer-map {
+  padding: 0px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
