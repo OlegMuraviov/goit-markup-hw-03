@@ -32,8 +32,16 @@ body {
   padding-right: 15px;
   width: 1200px;
   /* ------- Временное условие для верстки ----- */
-  outline: 2px solid tomato;
+  /* outline: 1px solid red; */
 }
+
+/* ---------------------header styles--------------------- */
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -42,42 +50,49 @@ body {
   color: var(--main-text-color);
 }
 
-/* ---------------------header styles--------------------- */
-
 .header-logo {
   display: block;
-  padding-top: 24px;
+  margin-right: 93px;
+}
+.nav-list {
+  display: flex;
 }
 
-.nav-item {
-  margin: 0px auto;
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+
+.nav-item-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.nav-item-link {
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-item + .contact-item {
+  margin-left: 50px;
+}
+.contact-item-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.header-contacts a {
+  color: var(--additional-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: var(--additional-text-color);
-}
-.contact-item-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo,
-.nav-item-link,
-.contact-item-link {
+.nav-item-link {
   color: var(--main-text-color);
 }
 .nav-item a:hover,
@@ -105,6 +120,12 @@ body {
 
   background-color: var(--bgc-total);
 }
+
+.div-hero {
+  padding-bottom: 200px;
+  text-align: center;
+}
+
 .hero-title {
   margin: 0px auto;
   padding-left: auto;
@@ -115,7 +136,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
 
   color: var(--bgc-additional);
 }
@@ -139,14 +159,14 @@ body {
   border-color: var(--bgc-total);
 }
 
-.div-hero {
-  padding-bottom: 200px;
-}
-
 /* ---------------------advantages styles--------------------- */
 .studio-advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.studio-advantages-list {
+  display: flex;
 }
 
 .studio-advantages-title {
@@ -179,6 +199,10 @@ body {
   padding-bottom: 50px;
   text-align: center;
 }
+.wwd-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ---------------------our team--------------------- */
 
@@ -193,19 +217,40 @@ body {
   text-align: center;
   color: var(--main-text-color);
 }
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
 .team-names {
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
 }
 .team-positions {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--additional-text-color);
 }
 
 /* ---------------------PORTFOLIO--------------------- */
+.main-portfolio {
+  border-top: 1px solid #eeeeee;
+}
+
+.portfolio-btn-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+.portfolio-btn-item + .portfolio-btn-item {
+  margin-left: 8px;
+}
 
 .btn-portfolio {
   font-family: inherit;
@@ -223,11 +268,20 @@ body {
 .btn-portfolio:focus {
   background-color: var(--focus-color);
 }
-.portfolio-btn-title {
-  padding-top: 94px;
-  padding-bottom: 34px;
-}
+
 /* ---------------------PORTFOLIO-PROJECTS--------------------- */
+.images-studio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.images-border {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
 .projects-title {
   padding-top: 20px;
   padding-bottom: 4px;
