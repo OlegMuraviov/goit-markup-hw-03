@@ -28,52 +28,39 @@ body {
 
 .container {
   margin: 0px auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  width: 1200px;
+  /* ------- Временное условие для верстки ----- */
   outline: 2px solid tomato;
 }
-.center {
-  text-align: center;
-}
-
-.logo,
-.list,
-.link {
-  text-decoration: none;
-  list-style-type: none;
-  color: var(--main-text-color);
-  margin: 0;
-}
-.active-page {
-  color: var(--brand-color);
-}
-
-/* ---------------------header styles--------------------- */
 .logo {
-  display: inline-block;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   color: var(--main-text-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
-.logo-web {
-  color: var(--brand-color);
-  display: inline-block;
-  padding-top: 60px;
+
+/* ---------------------header styles--------------------- */
+
+.header-logo {
+  display: block;
+  padding-top: 24px;
 }
-.navigation {
+
+.nav-item {
+  margin: 0px auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-
-.header-contacts {
-  margin: 0px;
+.nav-item-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contacts a {
@@ -82,147 +69,208 @@ body {
   line-height: 16px;
   color: var(--additional-text-color);
 }
-.navigation a:hover,
-.header-contacts a:hover,
-.footer-contacts:hover,
-.footer-map:hover {
-  color: var(--hover-color);
+.contact-item-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.navigation a:focus,
-.header-contacts a:focus,
-.footer-contacts:focus,
-.footer-map:focus {
-  color: var(--focus-color);
+
+.logo,
+.nav-item-link,
+.contact-item-link {
+  color: var(--main-text-color);
+}
+.nav-item a:hover,
+.contact-item a:hover {
+  color: var(--hover-color);
 }
 
 /* ---------------------main styles--------------------- */
+.hiden {
+  opacity: 0;
+  font-size: 0px;
+  line-height: 0px;
+  display: none;
+  color: transparent;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0px;
+  height: 0px;
+}
+
 /* ---------------------hero--------------------- */
 .hero {
-  background-color: var(--bgc-total);
   margin: 0px auto;
   max-width: 1600px;
+
+  background-color: var(--bgc-total);
 }
 .hero-title {
-  margin: 0px;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin: 0px auto;
   padding-left: auto;
   padding-right: auto;
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+
   color: var(--bgc-additional);
 }
 .button-studio {
   display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   background-color: var(--bgc-button-main);
   color: var(--bgc-additional);
   cursor: pointer;
-  padding: 10px 32px;
-  margin-bottom: 200px;
-  min-width: 200px;
-  border-radius: 4px;
+  text-align: center;
 }
-.button-portfolio {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  color: var(--main-text-color);
-  background-color: var(--bgc-button-portfolio);
-  cursor: pointer;
+
+.button-portfolio:focus {
+  border-color: var(--bgc-total);
 }
-.button-portfolio:focus,
-.button-portfolio:hover {
-  color: var(--bgc-button-portfolio);
-  background-color: var(--bgc-button-main);
+
+.div-hero {
+  padding-bottom: 200px;
 }
 
 /* ---------------------advantages styles--------------------- */
-.studio-advantages-list {
-  margin: 0px;
+.studio-advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .studio-advantages-title {
-  margin: 0px;
-  font-weight: bold;
+  display: inline-block;
+  margin: 0px auto;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--main-text-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-right: 10px;
 }
 .studio-advantages-desctiption {
-  margin: 0px;
+  margin: 0px auto;
+  padding-right: 10px;
+
   font-size: 14px;
   line-height: 1.71;
   color: var(--additional-text-color);
 }
 
-/* ---------------------What We Do (WWD) + our team--------------------- */
-.wwd-list,
-.out-team-list {
-  margin: 0px;
-}
+/* ---------------------What We Do (WWD)--------------------- */
 
-.wwd-title,
-.our-team-title {
-  margin: 0px;
-  font-weight: bold;
+.wwd-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--main-text-color);
-  padding: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* ---------------------our team--------------------- */
+
+.team-title {
+  display: block;
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--main-text-color);
 }
 .team-names {
-  margin: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--main-text-color);
 }
 .team-positions {
-  margin: 0px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--additional-text-color);
 }
+
+/* ---------------------PORTFOLIO--------------------- */
+
+.btn-portfolio {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border-radius: 4px;
+
+  color: var(--main-text-color);
+  background-color: var(--bgc-button-portfolio);
+}
+.btn-portfolio:hover {
+  background-color: var(--hover-color);
+}
+.btn-portfolio:focus {
+  background-color: var(--focus-color);
+}
+.portfolio-btn-title {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+/* ---------------------PORTFOLIO-PROJECTS--------------------- */
 .projects-title {
-  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 4px;
+
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
+
   color: var(--main-text-color);
 }
-.projects-type {
+.projects-description {
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--additional-text-color);
 }
+
 /* ---------------------footer styles--------------------- */
+
 .footer-bgc {
   background-color: var(--bgc-total);
   margin: 0px auto;
   max-width: 1600px;
 }
+.footer-logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.logo-web {
+  display: inline-block;
+  color: var(--brand-color);
+}
 .footer-studio {
   color: var(--bgc-additional);
 }
-.footer-list {
-  padding-bottom: 10px;
+.footer-item {
+  padding-bottom: 9px;
 }
-.footer-list-last {
+li.footer-item:last-child {
   padding-bottom: 60px;
 }
-.adress-list {
-  margin: 0px;
-  padding: 0px;
-}
+
 .footer-map {
   padding: 0px;
   font-style: normal;
