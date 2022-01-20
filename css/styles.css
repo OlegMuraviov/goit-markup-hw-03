@@ -32,7 +32,7 @@ body {
   padding-right: 15px;
   width: 1200px;
   /* ------- Временное условие для верстки ----- */
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* ---------------------header styles--------------------- */
@@ -117,7 +117,7 @@ body {
 .hero {
   margin: 0px auto;
   max-width: 1600px;
-
+  padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--bgc-total);
 }
@@ -130,8 +130,8 @@ body {
   margin: 0px auto;
   padding-left: auto;
   padding-right: auto;
-  padding-top: 200px;
-  padding-bottom: 30px;
+
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -173,16 +173,18 @@ body {
 .studio-advantages-title {
   display: inline-block;
   margin: 0px auto;
+  margin-bottom: 10px;
+
+  color: var(--main-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--main-text-color);
   text-transform: uppercase;
-  margin-bottom: 10px;
-  padding-right: 10px;
+  letter-spacing: 0.03em;
 }
 .studio-advantages-item {
-  width: 370px;
+  width: 270px;
   margin-right: 30px;
 }
 .studio-advantages-item:last-child {
@@ -191,14 +193,17 @@ body {
 
 .studio-advantages-desctiption {
   margin: 0px auto;
-  padding-right: 10px;
 
   font-size: 14px;
   line-height: 1.71;
   color: var(--additional-text-color);
+  letter-spacing: 0.03em;
 }
 
 /* ---------------------What We Do (WWD)--------------------- */
+.wwd-main {
+  padding-bottom: 94px;
+}
 
 .wwd-title {
   font-weight: 700;
@@ -211,7 +216,6 @@ body {
 .wwd-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 /* ---------------------our team--------------------- */
@@ -236,8 +240,8 @@ body {
   text-align: center;
 }
 .team-info {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-names {
   margin-bottom: 10px;
@@ -253,16 +257,18 @@ body {
 }
 
 /* ---------------------PORTFOLIO--------------------- */
-.main-portfolio {
-  border-top: 1px solid #eeeeee;
+.projects-photo {
   padding-top: 94px;
-}
+  padding-bottom: 94px;
 
+  border-top: 1px solid #eeeeee;
+}
 .portfolio-btn-title {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .portfolio-btn-item + .portfolio-btn-item {
   margin-left: 8px;
 }
@@ -287,11 +293,7 @@ body {
 .btn-portfolio:focus {
   background-color: var(--focus-color);
 }
-.projects-photo {
-  padding-bottom: 94px;
-}
 
-/* ---------------------PORTFOLIO-PROJECTS--------------------- */
 .images-studio {
   display: flex;
   flex-wrap: wrap;
